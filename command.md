@@ -793,7 +793,7 @@ Combine two files, fruits.txt and colors.txt, with a custom delimiter |.
 Merge all .txt files in the current directory into a single output with spaces between columns.
 Create a file scores.txt with numbers and merge it with names.txt, replacing missing values with -.
 Merge the contents of log1.txt and log2.txt serially (one after the other) instead of side by side.
-# Command
+# Command tr
 Create a file text.txt with mixed-case text and convert all characters to uppercase.
 Convert all lowercase letters in data.txt to lowercase and save the result to lower_data.txt.
 Replace all spaces in notes.txt with underscores.
@@ -805,4 +805,50 @@ Convert the output of echo "Hello, World!" by replacing commas with semicolons.
 Remove all punctuation marks from story.txt and display the cleaned text.
 Squeeze multiple consecutive spaces in messy.txt into a single space and save to clean.txt.
 
+# Command sort
+Create a file names.txt with a list of names and sort them alphabetically.
+Sort the lines of numbers.txt (containing integers) in numerical order.
+Sort the contents of data.txt in reverse order and display the result.
+Create a file scores.txt with names and scores (e.g., "Alice 85") and sort by the second field numerically.
+Sort all .txt files in the current directory alphabetically and save the combined output to all_sorted.txt.
+Sort the lines of log.txt by ignoring case sensitivity.
+Sort the output of ls -l by file size (5th field) in descending order.
+Remove duplicate lines from list.txt while sorting it alphabetically.
+Sort dates.txt (containing dates in YYYY-MM-DD format) chronologically.
+Sort mixed.txt (containing numbers and text) by the first character, treating numbers as strings.
 
+# Command wc
+Create a file text.txt with several lines and display the total number of lines.
+Count the number of words in notes.txt.
+Display the total number of characters in data.txt.
+Use wc to count the number of files in the current directory.
+Count the lines, words, and characters in log.txt and save the output to stats.txt.
+Find the number of lines in all .txt files in the current directory combined.
+Count the number of words in the output of echo "This is a test sentence".
+Display only the byte count for binary.dat (a binary file, if available).
+Count the number of lines in /etc/passwd (if accessible).
+Use wc to determine the total word count across multiple files (file1.txt, file2.txt, file3.txt).
+
+# Command tee
+Create a file output.txt and use tee to write the output of echo "Hello, World!" to it while displaying it on the screen.
+Pipe the output of ls -l to tee and save it to dir_list.txt.
+Use tee to append the current date and time to an existing file log.txt without overwriting it.
+Write the output of who to two files, users1.txt and users2.txt, at the same time.
+Redirect the output of cat data.txt through tee to save it to backup.txt while displaying it.
+Use tee to save the output of ps aux to processes.txt and count the lines with wc -l.
+Pipe grep "error" log.txt to tee and save matching lines to errors.txt.
+Create a file combined.txt by using tee to merge the contents of file1.txt and file2.txt while showing the result.
+Use tee with sudo to write the output of echo "test" > /etc/testfile to a restricted file (if permitted).
+Pipe the output of sort names.txt to tee and save it to sorted_names.txt while displaying the sorted list.
+
+# Command uniq
+Create a file list.txt with repeated lines (e.g., "apple", "banana", "apple") and remove duplicate consecutive lines.
+Sort data.txt with duplicates and use uniq to display only unique lines.
+Count the number of occurrences of each line in words.txt after sorting.
+Use uniq to display only the lines that appear more than once in a sorted log.txt.
+Remove duplicate lines from names.txt and save the result to unique_names.txt.
+Sort numbers.txt and use uniq to show only the lines that appear exactly once.
+Pipe the output of cat items.txt through sort and uniq to eliminate duplicates while displaying the result.
+Use uniq with a case-insensitive option to remove duplicate lines from mixed_case.txt after sorting.
+Display the duplicate lines in records.txt with their counts after sorting.
+Combine sort and uniq to process entries.txt and save only unique lines to clean_entries.txt.
