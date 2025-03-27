@@ -1,179 +1,179 @@
-#Команда grep
+#  Команда grep
 Создайте файл fruits.txt с названиями фруктов (например, Apple, Banana, Orange, Apricot) и выведите строки, содержащие букву a.
 Найдите в файле fruits.txt строки, которые начинаются с A.
 Подсчитайте, сколько строк в файле содержат слово Apple.
 Выведите строки из файла fruits.txt, которые не содержат букву e.
 Найдите в текущей директории все файлы с расширением .txt и выведите строки, содержащие слово test.
 
-#Команда tail
+#  Команда tail
 Создайте файл log.txt с 15 строками текста и выведите последние 5 строк.
 Выведите все строки файла log.txt, начиная с 10-й.
 Сохраните последние 3 строки файла log.txt в новый файл end_log.txt.
 Выведите последние 7 строк файла /var/log/syslog (если доступно).
 Используя команду tail, следите за изменениями в файле log.txt в реальном времени.
 
-#Команда head
+#  Команда head
 Создайте файл list.txt с 20 строками чисел и выведите первые 4 строки.
 Выведите первые 10 строк файла /etc/passwd (если доступно).
 Сохраните первые 6 строк файла list.txt в новый файл top_list.txt.
 Выведите первые 3 строки из вывода команды ls -l.
 Создайте файл с текстом и выведите только первую строку.
 
-#Команда cut
+#  Команда cut
 Создайте файл users.txt с данными (Имя Возраст Страна) и выведите только имена.
 Из файла users.txt извлеките только возраст (второе поле).
 Выведите первые два поля из файла /etc/passwd, разделённых :.
 Сохраните страны (третье поле) из users.txt в файл countries.txt.
 Из вывода команды date извлеките только время (например, часы и минуты).
 
-#Команда ps
+#  Команда ps
 Выведите список всех запущенных процессов для текущего пользователя.
 Найдите PID процесса с именем bash.
 Выведите только команды запущенных процессов без заголовков.
 Подсчитайте, сколько процессов запущено в системе.
 Выведите информацию о процессе с самым высоким использованием CPU.
 
-#Команда cp
+#  Команда cp
 Скопируйте файл test.txt в файл test_copy.txt.
 Скопируйте директорию folder1 в folder2 со всем содержимым.
 Скопируйте все файлы с расширением .txt в директорию backup.
 Скопируйте файл data.txt в /tmp с сохранением исходных прав доступа.
 Создайте копию файла log.txt с именем log_$(date +%Y%m%d).txt.
 
-#Команда less
+#  Команда less
 Откройте файл /var/log/syslog и найдите строку с error.
 Просмотрите файл readme.txt и перейдите к концу файла.
 Откройте файл long_list.txt и выведите номер 50-й строки.
 Используйте less для просмотра вывода команды ls -l.
 Откройте файл text.txt и найдите все вхождения слова hello.
 
-#Команда nl
+# Команда nl
 Создайте файл items.txt с 5 строками и пронумеруйте их.
 Пронумеруйте строки файла items.txt, пропуская пустые строки.
 Выведите пронумерованные строки из файла /etc/passwd.
 Сохраните пронумерованный текст из items.txt в numbered_items.txt.
 Пронумеруйте строки вывода команды ps aux.
 
-#Команда find
+#  Команда find
 Найдите все файлы с расширением .txt в текущей директории.
 Найдите все файлы, изменённые за последние 7 дней.
 Найдите все пустые файлы в директории /tmp.
 Найдите файлы размером больше 1 МБ в текущей директории.
 Найдите все директории с именем backup в /home.
 
-#Команда du
+#  Команда du
 Выведите размер текущей директории в читаемом формате.
 Подсчитайте размер всех файлов с расширением .txt.
 Выведите размер директории /var в килобайтах.
 Найдите 5 самых больших поддиректорий в /home.
 Сохраните размер текущей директории в файл size.txt.
 
-#Команда df
+#  Команда df
 Выведите информацию о свободном месте на всех дисках.
 Выведите только процент использования диска /.
 Сохраните данные о дисках в файл disk_usage.txt.
 Выведите информацию о дисках в мегабайтах.
 Найдите диск с наименьшим количеством свободного места.
 
-#Команда tar
+#  Команда tar
 Создайте архив backup.tar из директории data.
 Распакуйте архив backup.tar в директорию extracted.
 Создайте сжатый архив backup.tar.gz из файлов .txt.
 Выведите список содержимого архива backup.tar без распаковки.
 Добавьте файл new.txt в существующий архив backup.tar.
 
-#Команда zip
+#  Команда zip
 Создайте архив files.zip из всех .txt файлов.
 Распакуйте архив files.zip в директорию unzipped.
 Добавьте файл extra.txt в существующий архив files.zip.
 Выведите список файлов в files.zip без распаковки.
 Создайте защищённый паролем архив secure.zip из директории secret.
 
-#Команда ps -aux
+#  Команда ps -aux
 Выведите все процессы в системе с полной информацией.
 Найдите процессы, запущенные пользователем root.
 Подсчитайте количество процессов с именем python.
 Выведите PID и команду для всех процессов bash.
 Сохраните вывод ps -aux в файл processes.txt.
 
-#Команда kill
+#  Команда kill
 Найдите PID процесса sleep и завершите его.
 Запустите sleep 100 в фоновом режиме и завершите его по PID.
 Завершите все процессы с именем bash (осторожно!).
 Убейте процесс с самым высоким использованием памяти.
 Завершите процесс по его PID с сигналом SIGKILL.
 
-#Команда last
+#  Команда last
 Выведите последние 5 записей о входах в систему.
 Найдите все входы пользователя user1.
 Подсчитайте, сколько раз входил текущий пользователь.
 Выведите только IP-адреса из вывода last.
 Сохраните историю входов в файл login_history.txt.
 
-#Команда jobs
+#  Команда jobs
 Запустите sleep 60 в фоновом режиме и выведите список заданий.
 Запустите два фоновых процесса и проверьте их статус.
 Остановите процесс sleep 100 и выведите список заданий.
 Перезапустите остановленное задание в фоне.
 Завершите все фоновые задания.
 
-#Команда bg
+#  Команда bg
 Запустите sleep 50 и остановите его, затем переведите в фон.
 Остановите два процесса и переведите их в фоновый режим.
 Проверьте, какие процессы работают в фоне после bg.
 Запустите cat и переведите его в фон.
 Переведите в фон последний остановленный процесс.
 
-#Команда fg
+#  Команда fg
 Запустите sleep 30 в фоне и выведите его на передний план.
 Остановите процесс nano и верните его на передний план.
 Запустите два фоновых процесса и выведите первый на передний план.
 Переведите последний фоновый процесс на передний план.
 Проверьте, что происходит с fg, если нет фоновых задач.
 
-#Команда chmod
+#  Команда chmod
 Создайте файл script.sh и дайте ему права на выполнение.
 Установите права чтения и записи для владельца на data.txt.
 Дайте всем пользователям права чтения на public.txt.
 Уберите права выполнения у файла script.sh.
 Установите права 755 на директорию tools.
 
-#Команда ping
+#  Команда ping
 Проверьте доступность сайта google.com с 5 запросами.
 Отправьте 10 пингов на локальный адрес 127.0.0.1.
 Сохраните результат пинга 8.8.8.8 в файл ping_log.txt.
 Выведите только время ответа из пинга github.com.
 Проверьте доступность хоста example.com без вывода лишней информации.
 
-#Команда traceroute
+#  Команда traceroute
 Проследите маршрут до google.com.
 Сохраните маршрут до 8.8.8.8 в файл route.txt.
 Выведите маршрут до github.com с числовыми IP без имён хостов.
 Ограничьте трассировку до facebook.com 10 хопами.
 Проверьте маршрут до локального адреса 127.0.0.1.
 
-Команда nmap
+#  Команда nmap
 Просканируйте открытые порты на localhost.
 Выполните быстрое сканирование хоста 192.168.1.1.
 Найдите все активные хосты в сети 192.168.1.0/24.
 Сохраните результаты сканирования scanme.nmap.org в файл nmap_result.txt.
 Проверьте, какие сервисы работают на портах 80 и 443 на example.com.
 
-#Команда netstat
+#  Команда netstat
 Выведите все активные сетевые соединения.
 Покажите только TCP-соединения на вашем компьютере.
 Подсчитайте количество открытых портов.
 Выведите список прослушиваемых портов.
 Сохраните статистику сетевых соединений в файл netstat_log.txt.
 
-#Команда nslookup
+#  Команда nslookup
 Узнайте IP-адрес домена google.com.
 Найдите почтовые серверы для example.com.
 Выполните обратный DNS-запрос для 8.8.8.8.
 Сохраните результат запроса для github.com в файл dns.txt.
 Проверьте NS-записи для домена facebook.com.
 
-#Команда curl
+#  Команда curl
 Скачайте главную страницу example.com и выведите её в терминал.
 Сохраните содержимое http://httpbin.org/get в файл response.txt.
 Выполните GET-запрос к https://api.github.com и выведите заголовки.
@@ -183,7 +183,7 @@
 
 
 -------------
-#Команда grep
+#  Команда grep
 Создайте файл animals.txt с названиями животных и найдите строки, содержащие cat.
 Выведите строки из animals.txt, начинающиеся с d.
 Подсчитайте, сколько строк в файле содержат букву e.
@@ -195,7 +195,7 @@
 Подсчитайте вхождения слова error в /var/log/syslog (если доступно).
 Выведите строки из notes.txt, содержащие слово TODO без учёта регистра.
 
-#Команда tail
+#  Команда tail
 Создайте файл records.txt с 20 строками текста и выведите последние 8 строк.
 Выведите последние 3 строки файла /var/log/syslog (если доступно).
 Сохраните последние 5 строк records.txt в файл end_records.txt.
@@ -207,7 +207,7 @@
 Создайте файл numbers.txt с числами 1-30 и выведите последние 7 строк.
 Выведите последние 6 строк файла history.txt и подсчитайте их количество.
 
-#Команда head
+#  Команда head
 Создайте файл items.txt с 25 строками и выведите первые 6 строк.
 Выведите первые 5 строк файла /etc/passwd (если доступно).
 Сохраните первые 10 строк items.txt в файл top_items.txt.
@@ -219,7 +219,7 @@
 Выведите первые 2 строки вывода команды who.
 Создайте файл text.txt и выведите первые 5 строк в файл head_text.txt.
 
-#Команда cut
+#  Команда cut
 Создайте файл people.txt (Имя Возраст Город) и выведите только имена.
 Извлеките возраст (второе поле) из файла people.txt.
 Выведите первые два поля из /etc/passwd, разделённых :.
@@ -231,7 +231,7 @@
 Сохраните первые 5 символов каждой строки notes.txt в short_notes.txt.
 Извлеките имя пользователя (первое поле) из вывода who.
 
-#Команда ps
+#  Команда ps
 Выведите все процессы текущего пользователя.
 Найдите PID процесса с именем firefox.
 Выведите только команды запущенных процессов.
@@ -243,7 +243,7 @@
 Выведите только PID и время запуска для процессов bash.
 Найдите процесс с самым долгим временем работы.
 
-#Команда cp
+#  Команда cp
 Скопируйте файл source.txt в source_copy.txt.
 Скопируйте директорию docs в docs_backup.
 Скопируйте все .log файлы в директорию logs.
@@ -255,7 +255,7 @@
 Скопируйте /etc/hosts в текущую директорию (если доступно).
 Скопируйте все .txt файлы в archive с подтверждением перезаписи.
 
-#Команда less
+#  Команда less
 Откройте файл /var/log/syslog и найдите слово fail.
 Просмотрите файл manual.txt и перейдите к 100-й строке.
 Откройте data.txt и найдите последнее вхождение error.
@@ -267,7 +267,7 @@
 Откройте /etc/passwd и найдите строку с root.
 Используйте less для просмотра history.txt с номерами строк.
 
-#Команда nl
+#  Команда nl
 Пронумеруйте строки файла list.txt с 5 строками.
 Пронумеруйте строки list.txt, пропуская пустые строки.
 Выведите пронумерованные строки из /etc/passwd.
@@ -279,7 +279,7 @@
 Сохраните пронумерованный вывод who в файл who_numbered.txt.
 Пронумеруйте строки файла readme.txt с пользовательским разделителем.
 
-#Команда find
+#  Команда find
 Найдите все .txt файлы в текущей директории.
 Найдите файлы, изменённые за последние 3 дня.
 Найдите все пустые файлы в /tmp.
@@ -291,7 +291,7 @@
 Найдите все исполняемые файлы в /bin.
 Найдите файлы с именем backup (регистр не важен) в /etc.
 
-#Команда du
+#  Команда du
 Выведите размер текущей директории в читаемом формате.
 Подсчитайте размер всех .txt файлов в текущей директории.
 Выведите размер /var в килобайтах.
@@ -303,7 +303,7 @@
 Найдите размер всех .log файлов в /var/log.
 Выведите максимальную глубину вложенности в /usr.
 
-#Команда df
+#  Команда df
 Выведите информацию о всех дисках в читаемом формате.
 Выведите процент использования диска /.
 Сохраните данные о дисках в файл disk_info.txt.
@@ -315,7 +315,7 @@
 Сохраните процент использования всех дисков в usage.txt.
 Выведите диски с менее 20% свободного места.
 
-#Команда tar
+#  Команда tar
 Создайте архив data.tar из директории files.
 Распакуйте архив data.tar в директорию extracted.
 Создайте сжатый архив data.tar.gz из .txt файлов.
@@ -327,7 +327,7 @@
 Проверьте целостность архива data.tar.gz.
 Создайте архив all.tar из текущей директории с максимальным сжатием.
 
-#Команда zip
+#  Команда zip
 Создайте архив docs.zip из всех .txt файлов.
 Распакуйте docs.zip в директорию unzipped.
 Добавьте файл extra.txt в архив docs.zip.
@@ -339,7 +339,7 @@
 Создайте архив all.zip из текущей директории рекурсивно.
 Проверьте архив docs.zip на ошибки.
 
-#Команда ps -aux
+#  Команда ps -aux
 Выведите все процессы системы с полной информацией.
 Найдите процессы пользователя root.
 Подсчитайте количество процессов bash.
@@ -351,7 +351,7 @@
 Выведите процессы с сортировкой по PID.
 Подсчитайте общее количество процессов пользователя.
 
-Команда kill
+#  Команда kill
 Запустите sleep 100 и завершите его по PID.
 Найдите PID процесса firefox и завершите его.
 Завершите все процессы python (осторожно!).
@@ -363,7 +363,7 @@
 Убейте процесс по имени с подтверждением.
 Завершите все процессы, связанные с test.sh.
 
-#Команда last
+#  Команда last
 Выведите последние 10 входов в систему.
 Найдите все входы пользователя admin.
 Подсчитайте входы текущего пользователя.
@@ -375,7 +375,7 @@
 Подсчитайте входы с конкретного IP.
 Выведите входы за последний месяц.
 
-#Команда jobs
+#  Команда jobs
 Запустите sleep 60 в фоне и выведите список заданий.
 Остановите sleep 100 и проверьте статус заданий.
 Запустите три фоновых процесса и выведите их список.
@@ -387,7 +387,7 @@
 Запустите cat в фоне и выведите его номер.
 Остановите и перезапустите задание с sleep.
 
-#Команда bg
+#  Команда bg
 Запустите sleep 50 и переведите его в фон после остановки.
 Остановите nano и переведите в фоновый режим.
 Запустите два процесса и переведите их в фон.
@@ -399,7 +399,7 @@
 Переведите все остановленные процессы в фон.
 Проверьте, что происходит с bg без остановленных задач.
 
-#Команда fg
+# Команда fg
 Запустите sleep 30 в фоне и верните на передний план.
 Остановите nano и верните его на передний план.
 Запустите два фоновых процесса и верните первый.
@@ -411,7 +411,7 @@
 Верните фоновый процесс с номером 2.
 Проверьте, что происходит с fg после завершения задачи.
 
-#Команда chmod
+# Команда chmod
 Дайте файлу script.sh права на выполнение.
 Установите права чтения и записи для владельца data.txt.
 Дайте всем права чтения на public.txt.
@@ -423,7 +423,7 @@
 Дайте права записи всем на shared.txt.
 Установите права 700 на директорию private.
 
-#Команда ping
+# Команда ping
 Проверьте доступность google.com с 10 запросами.
 Отправьте 5 пингов на 127.0.0.1.
 Сохраните результат пинга 8.8.8.8 в ping_result.txt.
@@ -435,7 +435,7 @@
 Сохраните пинг 1.1.1.1 с датой в ping_log.txt.
 Выведите статистику пинга cloudflare.com.
 
-#Команда traceroute
+# Команда traceroute
 Проследите маршрут до google.com.
 Сохраните маршрут до 8.8.8.8 в traceroute.txt.
 Выведите маршрут до github.com без имён хостов.
@@ -447,7 +447,7 @@
 Ограничьте трассировку amazon.com до 5 секунд.
 Выведите маршрут до cloudflare.com с максимальной детализацией.
 
-#Команда nmap
+# Команда nmap
 Просканируйте порты на localhost.
 Выполните быстрое сканирование 192.168.1.1.
 Найдите активные хосты в 192.168.1.0/24.
@@ -459,7 +459,7 @@
 Проверьте только TCP-порты на facebook.com.
 Сохраните агрессивное сканирование localhost в detailed_scan.txt.
 
-#Команда netstat
+# Команда netstat
 Выведите все активные соединения.
 Покажите только TCP-соединения.
 Подсчитайте открытые порты.
@@ -471,7 +471,7 @@
 Выведите статистику по протоколам.
 Найдите процессы, использующие порт 22.
 
-#Команда nslookup
+# Команда nslookup
 Узнайте IP-адрес google.com.
 Найдите MX-записи для example.com.
 Выполните обратный запрос для 8.8.8.8.
@@ -483,7 +483,7 @@
 Выполните запрос к серверу 1.1.1.1 для amazon.com.
 Сохраните все записи для example.org в dns_full.txt.
 
-#Команда curl
+# Команда curl
 Скачайте страницу example.com и выведите её.
 Сохраните http://httpbin.org/get в get_response.txt.
 Выведите заголовки https://api.github.com.
@@ -496,7 +496,7 @@
 Выполните запрос к facebook.com с тайм-аутом 5 секунд.
 
 
-#Command grep
+# Command grep
 Create a file animals.txt with animal names and find lines containing cat.
 Display lines from animals.txt that start with d.
 Count how many lines in the file contain the letter e.
@@ -507,7 +507,7 @@ Display lines from log.txt that end with a period.
 Find lines in data.txt that contain at least one digit.
 Count occurrences of the word error in /var/log/syslog (if available).
 Display lines from notes.txt containing the word TODO, case-insensitive.
-#Command tail
+# Command tail
 Create a file records.txt with 20 lines of text and display the last 8 lines.
 Display the last 3 lines of the file /var/log/syslog (if available).
 Save the last 5 lines of records.txt to a file end_records.txt.
@@ -518,7 +518,7 @@ Save the last 2 lines of data.txt to last_data.txt.
 Display the last 4 lines from /etc/passwd (if available).
 Create a file numbers.txt with numbers 1-30 and display the last 7 lines.
 Display the last 6 lines of history.txt and count them.
-#Command head
+# Command head
 Create a file items.txt with 25 lines and display the first 6 lines.
 Display the first 5 lines of /etc/passwd (if available).
 Save the first 10 lines of items.txt to top_items.txt.
@@ -529,7 +529,7 @@ Save the first 4 lines of data.txt to start_data.txt.
 Display the first 7 lines of numbers.txt with numbers 1-20.
 Display the first 2 lines of the output of who.
 Create a file text.txt and save the first 5 lines to head_text.txt.
-#Command cut
+# Command cut
 Create a file people.txt (Name Age City) and display only the names.
 Extract the age (second field) from people.txt.
 Display the first two fields from /etc/passwd, separated by :.
@@ -540,7 +540,7 @@ Extract the second field from data.txt (fields separated by tabs).
 Display the third field from the output of ls -l (permissions).
 Save the first 5 characters of each line from notes.txt to short_notes.txt.
 Extract the username (first field) from the output of who.
-#Command ps
+# Command ps
 Display all processes for the current user.
 Find the PID of a process named firefox.
 Display only the commands of running processes.
@@ -551,7 +551,7 @@ Display information about the process with PID 1.
 Save the list of processes to ps_output.txt.
 Display only PID and start time for bash processes.
 Find the process with the longest runtime.
-#Command cp
+# Command cp
 Copy the file source.txt to source_copy.txt.
 Copy the directory docs to docs_backup.
 Copy all .log files to the logs directory.
@@ -562,7 +562,7 @@ Copy all files from src to dest, preserving structure.
 Copy test.txt to test.bak only if it’s newer.
 Copy /etc/hosts to the current directory (if available).
 Copy all .txt files to archive with overwrite confirmation.
-#Command less
+# Command less
 Open /var/log/syslog and search for the word fail.
 View manual.txt and go to the 100th line.
 Open data.txt and find the last occurrence of error.
@@ -573,7 +573,7 @@ Open log.txt and go to 50% of the file.
 View config.txt and exit without changes.
 Open /etc/passwd and find the line with root.
 Use less to view history.txt with line numbers.
-#Command nl
+# Command nl
 Number the lines of a file list.txt with 5 lines.
 Number the lines of list.txt, skipping empty lines.
 Display numbered lines from /etc/passwd.
@@ -584,7 +584,7 @@ Display numbered lines from log.txt with a step of 2.
 Number the lines of numbers.txt with leading zeros.
 Save the numbered output of who to who_numbered.txt.
 Number the lines of readme.txt with a custom separator.
-#Command find
+# Command find
 Find all .txt files in the current directory.
 Find files modified in the last 3 days.
 Find all empty files in /tmp.
@@ -595,7 +595,7 @@ Find files with 777 permissions in /var.
 Find all hidden files (starting with .) in the current directory.
 Find all executable files in /bin.
 Find files named backup (case-insensitive) in /etc.
-#Command du
+# Command du
 Display the size of the current directory in a human-readable format.
 Calculate the size of all .txt files in the current directory.
 Display the size of /var in kilobytes.
@@ -606,7 +606,7 @@ Calculate the size of the data directory, including hidden files.
 Display the size of each subdirectory in the current directory.
 Find the size of all .log files in /var/log.
 Display the maximum depth of nesting in /usr.
-#Command df
+# Command df
 Display information about all disks in a human-readable format.
 Display the percentage of usage for the / disk.
 Save disk data to disk_info.txt.
@@ -617,7 +617,7 @@ Count the total number of available blocks.
 Display information only for the /home disk.
 Save the usage percentage of all disks to usage.txt.
 Display disks with less than 20% free space.
-#Command tar
+# Command tar
 Create an archive data.tar from the files directory.
 Extract data.tar to the extracted directory.
 Create a compressed archive data.tar.gz from .txt files.
@@ -628,7 +628,7 @@ Extract only one file from data.tar.gz.
 Create a compressed archive logs.tar.bz2 from the logs directory.
 Verify the integrity of the data.tar.gz archive.
 Create an archive all.tar from the current directory with maximum compression.
-#Command zip
+# Command zip
 Create an archive docs.zip from all .txt files.
 Extract docs.zip to the unzipped directory.
 Add the file extra.txt to the docs.zip archive.
@@ -639,7 +639,7 @@ Extract only one file from docs.zip.
 Update docs.zip by replacing the old readme.txt.
 Create an archive all.zip from the current directory recursively.
 Check docs.zip for errors.
-#Command ps -aux
+# Command ps -aux
 Display all system processes with full details.
 Find processes run by the root user.
 Count the number of bash processes.
@@ -650,7 +650,7 @@ Display only processes running for over an hour.
 Find the most CPU-intensive process.
 Display processes sorted by PID.
 Count the total number of processes for the current user.
-#Command kill
+# Command kill
 Start sleep 100 and terminate it by PID.
 Find the PID of firefox and terminate it.
 Terminate all python processes (use caution!).
@@ -661,7 +661,7 @@ Find a high-CPU process and kill it.
 Terminate the most recently started bash process.
 Kill a process by name with confirmation.
 Terminate all processes related to test.sh.
-#Command last
+# Command last
 Display the last 10 system logins.
 Find all logins by the admin user.
 Count the logins of the current user.
@@ -672,7 +672,7 @@ Display only dates and times of logins.
 Find the last login of the root user.
 Count logins from a specific IP.
 Display logins from the last month.
-#Command jobs
+# Command jobs
 Start sleep 60 in the background and list jobs.
 Stop sleep 100 and check job status.
 Start three background processes and list them.
@@ -683,7 +683,7 @@ Stop two processes and display their job numbers.
 Check job status after terminating one.
 Start cat in the background and display its job number.
 Stop and restart a sleep job.
-#Command bg
+# Command bg
 Start sleep 50, stop it, and move it to the background.
 Stop nano and move it to the background.
 Start two processes and move them to the background.
@@ -694,7 +694,7 @@ Move sleep 200 to the background after Ctrl+Z.
 Start python and move it to the background.
 Move all stopped processes to the background.
 Check what happens with bg when there are no stopped tasks.
-#Command fg
+# Command fg
 Start sleep 30 in the background and bring it to the foreground.
 Stop nano and bring it to the foreground.
 Start two background processes and bring the first one to the foreground.
@@ -705,7 +705,7 @@ Stop sleep 100 and bring it to the foreground.
 Start python in the background and bring it to the foreground.
 Bring the background job with number 2 to the foreground.
 Check what happens with fg after a task completes.
-#Command chmod
+# Command chmod
 Make the file script.sh executable.
 Set read and write permissions for the owner of data.txt.
 Grant read permissions to everyone for public.txt.
@@ -716,7 +716,7 @@ Set permissions only for the group on group_file.txt.
 Make secret.txt accessible only to the owner.
 Grant write permissions to everyone for shared.txt.
 Set permissions to 700 on the private directory.
-#Command ping
+# Command ping
 Check the availability of google.com with 10 requests.
 Send 5 pings to 127.0.0.1.
 Save the result of pinging 8.8.8.8 to ping_result.txt.
@@ -727,7 +727,7 @@ Limit the ping to facebook.com to 3 seconds.
 Check the availability of localhost with minimal output.
 Save the ping of 1.1.1.1 with the date to ping_log.txt.
 Display ping statistics for cloudflare.com.
-#Command traceroute
+# Command traceroute
 Trace the route to google.com.
 Save the route to 8.8.8.8 to traceroute.txt.
 Display the route to github.com without hostnames.
@@ -738,7 +738,7 @@ Save the route to example.com with response times.
 Check the route to the local network 192.168.1.1.
 Limit the trace to amazon.com to 5 seconds.
 Display the route to cloudflare.com with maximum detail.
-#Command nmap
+# Command nmap
 Scan ports on localhost.
 Perform a quick scan of 192.168.1.1.
 Find active hosts in 192.168.1.0/24.
@@ -749,7 +749,7 @@ Find open ports on github.com.
 Scan 192.168.0.0/24 with service version output.
 Check only TCP ports on facebook.com.
 Save an aggressive scan of localhost to detailed_scan.txt.
-#Command netstat
+# Command netstat
 Display all active connections.
 Show only TCP connections.
 Count the number of open ports.
@@ -760,7 +760,7 @@ Display only UDP connections.
 Show network routes.
 Display protocol statistics.
 Find processes using port 22.
-#Command nslookup
+# Command nslookup
 Find the IP address of google.com.
 Find MX records for example.com.
 Perform a reverse lookup for 8.8.8.8.
@@ -771,7 +771,7 @@ Find the IP for localhost.
 Check the CNAME for www.google.com.
 Query 1.1.1.1 for amazon.com.
 Save all records for example.org to dns_full.txt.
-#Command curl
+# Command curl
 Download the page from example.com and display it.
 Save http://httpbin.org/get to get_response.txt.
 Display headers from https://api.github.com.
@@ -782,7 +782,7 @@ Download an image from https://example.com/image.jpg.
 Send a request with a custom header to httpbin.org.
 Save JSON from https://api.ipify.org?format=json to ip.json.
 Perform a request to facebook.com with a 5-second timeout.
-#Command
+# Command
 Create two files, names.txt (with names) and ages.txt (with ages), and merge them side by side into a single output.
 Merge the contents of file1.txt and file2.txt into a new file combined.txt.
 Combine three files (a.txt, b.txt, c.txt) with a tab delimiter and display the result.
@@ -793,7 +793,7 @@ Combine two files, fruits.txt and colors.txt, with a custom delimiter |.
 Merge all .txt files in the current directory into a single output with spaces between columns.
 Create a file scores.txt with numbers and merge it with names.txt, replacing missing values with -.
 Merge the contents of log1.txt and log2.txt serially (one after the other) instead of side by side.
-#Command
+# Command
 Create a file text.txt with mixed-case text and convert all characters to uppercase.
 Convert all lowercase letters in data.txt to lowercase and save the result to lower_data.txt.
 Replace all spaces in notes.txt with underscores.
