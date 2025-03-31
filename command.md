@@ -962,3 +962,17 @@ Use uniq with a case-insensitive option to remove duplicate lines from mixed_cas
 Display the duplicate lines in records.txt with their counts after sorting.
 Combine sort and uniq to process entries.txt and save only unique lines to clean_entries.txt.
 ```
+
+# Command lsof
+```
+Display all open files for the current user.
+Find all open files associated with a specific process using its PID (e.g., PID 1234).
+List all open files in the /tmp directory.
+Identify which process is using port 80 on your system.
+Display all open network files (e.g., sockets) for the sshd process.
+Find all files opened by a specific user (e.g., user1).
+List all open files with a specific file descriptor (e.g., cwd for current working directory).
+Identify processes that have opened a specific file, such as /var/log/syslog.
+Display all IPv4 connections opened by processes on your system.
+Find all open files larger than 1 GB currently in use by any process.
+```
