@@ -1,3 +1,81 @@
+## Для начала подготовим все для выполнения заданий 
+
+```
+mkdir /tmp/command; cd /tmp/command
+mkdir -p folder1/folder2/folder3
+mkdir backup
+
+cp /etc/passwd /tmp/command
+cp /etc/groups /tmp/command
+cat > users.txt << EOF
+Anna 25 Russia
+Bob 30 USA
+Clara 28 Germany
+David 35 UK
+EOF
+
+cat > fruits.txt << OEF
+
+ Apple
+ Banana
+ Orange
+ Apricot
+OEF
+cat > list.txt << EOF
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+EOF
+
+cat > log.txt << EOF
+Line 1: System started
+Line 2: User logged in
+Line 3: Data processing began
+Line 4: Warning issued
+Line 5: Connection established
+Line 6: File saved
+Line 7: Update completed
+Line 8: Error detected
+Line 9: Retry attempted
+Line 10: Backup initiated
+Line 11: Process paused
+Line 12: Memory low
+Line 13: Task resumed
+Line 14: Operation successful
+Line 15: System shutdown
+EOF
+
+
+
+```
+
+#  Команда cp
+```
+Скопируйте файл log.txt в файл logt_copy.txt.
+Скопируйте директорию folder1 в folder2 со всем содержимым.
+Скопируйте все файлы с расширением .txt в директорию backup.
+Скопируйте файл passwd в /folder1 с сохранением исходных прав доступа.
+Создайте копию файла log.txt с именем log_$(date +%Y%m%d).txt.
+```
+
+
 #  Команда grep
 ```
 Создайте файл fruits.txt с названиями фруктов (например, Apple, Banana, Orange, Apricot) и выведите строки, содержащие букву a.
@@ -37,14 +115,6 @@
 Выведите только команды запущенных процессов без заголовков.
 Подсчитайте, сколько процессов запущено в системе.
 Выведите информацию о процессе с самым высоким использованием CPU.
-```
-#  Команда cp
-```
-Скопируйте файл test.txt в файл test_copy.txt.
-Скопируйте директорию folder1 в folder2 со всем содержимым.
-Скопируйте все файлы с расширением .txt в директорию backup.
-Скопируйте файл data.txt в /tmp с сохранением исходных прав доступа.
-Создайте копию файла log.txt с именем log_$(date +%Y%m%d).txt.
 ```
 #  Команда less
 ```
